@@ -22,7 +22,7 @@ Now we can use sshfs to mount the file system locally with the following command
 sudo sshfs -o allow_other,default_permissions root@xxx.xxx.xxx.xxx:/ /mnt/folder_name
 ```
 
-##Unmounting the Remote File System
+## Unmounting the Remote File System
 When you no longer need the mount point you can simply unmount it with the command
 
 
@@ -30,7 +30,7 @@ When you no longer need the mount point you can simply unmount it with the comma
 ```sh
 sudo umount /mnt/folder_name
 ```
-##Permanently Mounting the Remote File System
+## Permanently Mounting the Remote File System
 SSHFS also allows for setting up permanent mount points to remote file systems. This would set a mount point that would persist through restarts of both your local machine and droplets. In order to set up a permanent mount point, we will need to edit the /etc/fstab file on the local machine to automatically mount the file system each time the system is booted.
 
 First we need to edit the **/etc/fstab** file with a text editor.
